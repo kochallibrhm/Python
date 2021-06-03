@@ -2,6 +2,10 @@ import enum
 import socket
 import threading
 
+''' 
+Socket is not communication. Socket is just the endpoint that receives the data which is sits at an IP and a PORT.
+'''
+
 HEADER = 64
 PORT = 5050
 SERVER = socket.gethostbyname(socket.gethostname())

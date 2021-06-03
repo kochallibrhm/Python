@@ -12,8 +12,8 @@ SERVER = socket.gethostbyname(socket.gethostname())
 
 ADDR = (SERVER, PORT)
 
-# AF_INET corresponds to IPv4 and SOCK_STREAM corresponds to TCP
-client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+# AF_INET corresponds to IPv4 and SOCK_STREAM corresponds to TCP 
+client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)    # Use SOCK_DGRAM for UDP
 client.connect(ADDR)
 
 def send(msg):

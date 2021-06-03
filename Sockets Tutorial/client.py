@@ -12,6 +12,7 @@ SERVER = socket.gethostbyname(socket.gethostname())
 
 ADDR = (SERVER, PORT)
 
+# AF_INET corresponds to IPv4 and SOCK_STREAM corresponds to TCP
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect(ADDR)
 

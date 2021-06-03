@@ -14,7 +14,7 @@ FORMAT = 'utf-8'
 DISCONNECT_MESSAGE = "!DISCONNECT"
 
 # AF_INET corresponds to IPv4 and SOCK_STREAM corresponds to TCP
-server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)   # Use SOCK_DGRAM for UDP
 server.bind(ADDR)
 
 def handle_client(conn, addr):
